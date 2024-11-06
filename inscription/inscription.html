@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inscription.css" />
+    <title>inscription</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-langues">
+        <div class="logo-box">
+          <ul>
+            <li><img src="../asset/logoterart1.png" alt="le logo" /></li>
+            <li><img src="../asset/logoterart2.png" alt="le logo vert" /></li>
+          </ul>
+        </div>
+        <div class="langues">
+          <ul>
+            <li>Fancais</li>
+            <li>Anglais</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compte-navbar">
+        <div class="compte-slogan">
+          <div class="compte">
+            <label for="Mon compte"> Mon compte</label>
+            <select name="Mon compte" id="Moncompte" required>
+              <option value="connexion">Connexion</option>
+              <option value="Inscription">Inscription</option>
+            </select>
+            <img src="../asset/logocompte.png" alt="logo-compte" />
+          </div>
+          <div class="slogan">
+            Consommez nos produits locaux et participez à la préservation de
+            notre patrimoine
+          </div>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#ProduitsDuTerroir"> Produits du Terroir</a></li>
+            <li><a href="#ArtisanatLocale"> Artisanat Locale</a></li>
+            <li><a href="#Nos producteurs"> Nos producteurs</a></li>
+            <li><a href="#NosArtisans"> Nos Artisants</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mon-panier">
+        <p>Mon panier</p>
+        <img src="../asset/chariot.png" alt="chariot" />
+        <fieldset>
+          <label for="produits">Produits</label>
+          <input
+            type="number"
+            id="produits"
+            name="produits"
+            placeholder="0"
+            aria-label="produits"
+            required
+            min="0"
+          />
+        </fieldset>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <a href="PageAccueil.html">Retour à la page d'accueil</a>
+      </aside>
+      <section>
+        <div class="bandeau"></div>
+        <div class="content">
+          <form action="/submit" method="post">
+            <h2 id="inscription">Inscription</h2>
+            <label for="name"> Nom :</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              pattern="[A-Za-zÀ-ÿ]+"
+              title="Seulement des caractères alphabétiques."
+              placeholder="votre nom"
+              required
+            />
+            <div class="error" id="nom-error">
+              Le nom est obligatoire et doit contenir uniquement des caractères
+              alphabétiques.
+            </div>
+            <label for="prenom"> Prénom :</label>
+            <input
+              type="text"
+              id="prenom"
+              name="Prénom"
+              pattern="[A-Za-zÀ-ÿ]+"
+              title="Seulement des caractères alphabétiques."
+              placeholder="votre prenom"
+              required
+            />
+            <div class="error" id="prenom-error">
+              Le prénom est obligatoire et doit contenir uniquement des
+              caractères alphabétiques.
+            </div>
+
+            <label for="email"> Adresse e-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="votre adresse e-mail"
+              aria-label="Adresse e-mail"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+            <div class="error" id="email-error">
+              L'adresse e-mail est obligatoire et doit être valide.
+            </div>
+            <label for="password">Mot de passe :</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+              placeholder="votre mot de passe"
+              required
+            />
+
+            <label for="confirm-password">Confirmer le mot de passe :</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+              placeholder="confirmer votre mot de passe"
+              required
+            />
+
+            <button type="submit">s'inscrire</button>
+
+            <button type="reset">réinitialiser</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>Mentions legales</footer>
+  </body>
+</html>
