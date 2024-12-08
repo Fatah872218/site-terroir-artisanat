@@ -5,19 +5,16 @@ header {
   justify-content: space-between;
   background-color: #71a79c;
 }
-
 .logo-langues {
   height: 100%;
   width: 10vw;
   background-color: blue;
 }
-
 .logo-box {
   height: 80%;
   overflow-y: scroll;
   background-color: blueviolet;
 }
-
 .logo-box > ul {
   list-style-type: none;
 }
@@ -40,7 +37,6 @@ header {
   width: 100%;
   background-color: rgb(72, 172, 172);
 }
-
 .compte-navbar {
   flex: 1;
   flex-direction: column;
@@ -60,7 +56,6 @@ header {
   margin: 20px 0 0 2px;
   flex-basis: 350px;
 }
-
 .compte > label {
   display: flex;
   flex-direction: column;
@@ -74,7 +69,6 @@ header {
   width: 90px;
   height: 35px;
 }
-
 .compte > img {
   margin: 10px 0 0 20px;
 }
@@ -90,12 +84,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .navbar > ul > li {
   list-style-type: none;
 }
 
 /* mon-panier */
+
 .mon-panier {
   display: flex;
   flex-direction: column;
@@ -104,7 +98,6 @@ header {
   width: 10vw;
   background-color: rgb(120, 150, 221);
 }
-
 .mon-panier > fieldset {
   border: 0;
   padding: 2px;
@@ -130,7 +123,6 @@ main {
   display: flex;
   flex-direction: row;
 }
-
 section {
   background-color: blanchedalmond;
   width: 90vw;
@@ -138,22 +130,22 @@ section {
   display: flex;
   flex-direction: column;
 }
-
 section > .bandeau {
   height: 20%;
   background-color: gold;
 }
 
 /* formulaire d'inscription */
+
 section > .content > form {
   display: flex;
   flex-direction: column;
   margin-left: 20rem;
   padding: 2px;
-}
-section > .content > form #inscription {
-  display: flex;
-  justify-content: center;
+  #inscription {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 label {
@@ -161,14 +153,12 @@ label {
   display: block;
   margin: 10px 0 5px;
 }
-
 input {
   width: 50%;
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
-
 button {
   font-size: 1.3rem;
   margin: 10px;
@@ -178,17 +168,16 @@ button {
   cursor: pointer;
   width: 30%;
 }
-
 button:hover {
   background-color: blue;
 }
-
 .error {
   color: red;
   display: none;
 }
 
 /* aside */
+
 aside {
   width: 10vw;
   height: 100%;
@@ -199,7 +188,6 @@ footer {
   height: 50px;
   background-color: cornflowerblue;
 }
-
 /* media queries */
 @media screen and (max-width: 600px) {
   section > .content > .prodFavICad {
@@ -207,4 +195,4 @@ footer {
     flex-direction: column;
     overflow: scroll;
   }
-}/*# sourceMappingURL=inscription.css.map */
+}

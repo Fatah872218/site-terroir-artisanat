@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>terroirArtisanat</title>
-    <link rel="stylesheet" href="PageAccueil.css" />
+    <title>produit1</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="connexion.css" />
   </head>
   <body>
     <header>
@@ -28,8 +29,6 @@
             <label for="Mon compte"> Mon compte</label>
             <select name="Mon compte" id="Moncompte" required>
               <option value="connexion">Connexion</option>
-              <a href="inscription.html">inscription</a>
-              >
               <option value="Inscription">Inscription</option>
             </select>
             <img src="../asset/logocompte.png" alt="logo-compte" />
@@ -70,11 +69,14 @@
       <aside>
         <section class="contact">
           <div class="nouscontactez">Nous contactez</div>
+          <hr />
           <div class="boxenvloppe">
             <img src="../asset/enveloppe.png" alt="enveloppe" />
           </div>
+          <hr />
           <div class="Tel">
             <a href="tel:+33563625924">Tel 05.63.62.59.24</a>
+            <hr />
           </div>
           <div class="adresse">
             <a
@@ -104,34 +106,53 @@
           </div>
         </div>
       </aside>
-      <section>
-        <div class="bandeau"></div>
-        <div class="content">
-          <p>Produits favoris et idées cadeaux</p>
-          <div class="prodFavICad">
-            <div class="prod1">
+      <section class="contentProd">
+        <div class="bandeau">
+          <div class="bandeauTerroir">
+            <div class="boxTerroir">
               <img
-                src="../asset/patepesp.png"
-                alt="paté au piment d'espelette"
+                src="../asset/bandeauterroir.jpg"
+                alt="des images de nos produits du terroir"
               />
-              <p>Paté au piment d'espelette</p>
-              <p>Prix: 5.80 euros</p>
             </div>
-
-            <div class="prod2">
-              <img src="../asset/spratFumes.png" alt="Sprats fumés de Riga" />
-              <p>Sprats fumés de Riga</p>
-              <p>Prix: 6.80 euros</p>
-            </div>
-            <div class="prod3">
-              <img
-                src="../asset/coffretNoelMer.png"
-                alt="Coffret de noël Mercier"
-              />
-              <p>Coffret de noël Mercier</p>
-              <p>Prix: 19.90 euros</p>
-            </div>
+            <button onclick="toggleMenu()">Produits du terroir</button>
           </div>
+          <div class="bandeauArtisanat">
+            <div class="boxArtisanat">
+              <img
+                src="../asset/bandeauartisanat.png"
+                alt="des images de nos produits artisanaux"
+              />
+            </div>
+            <button onclick="toggleMenu()">Produits artisanauxs</button>
+          </div>
+        </div>
+        <div class="content">
+          <p>Connexion</p>
+          <form class="login-form">
+            <h2>Connexion</h2>
+            <div class="input-group">
+              <label for="email">Email :</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Entrez votre email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Mot de passe :</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Entrez votre mot de passe"
+                required
+              />
+            </div>
+            <button type="submit">Se connecter</button>
+          </form>
         </div>
       </section>
     </main>

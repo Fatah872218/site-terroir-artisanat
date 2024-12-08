@@ -131,61 +131,85 @@ main {
   flex-direction: row;
 }
 
-section {
-  background-color: blanchedalmond;
+.contentProd {
+  background-color: rgb(142, 183, 103);
   width: 90vw;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
-section > .bandeau {
-  height: 20%;
-  background-color: gold;
-}
-
-/* formulaire d'inscription */
-section > .content > form {
+.contentProd .content {
   display: flex;
   flex-direction: column;
-  margin-left: 20rem;
-  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgreen;
+  height: 80%;
 }
-section > .content > form #inscription {
+.contentProd .content .produit {
+  background-color: aliceblue;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  width: 100%;
 }
-
-label {
-  font-size: 1.1rem;
-  display: block;
-  margin: 10px 0 5px;
+.contentProd .content .produit .description {
+  background-color: brown;
+  height: 80%;
+  margin-left: 50px;
 }
-
-input {
-  width: 50%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-}
-
-button {
-  font-size: 1.3rem;
-  margin: 10px;
-  border: none;
-  padding: 10px 5px 10px 5px;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 30%;
-}
-
-button:hover {
+.contentProd .content .produit .prod1 {
+  height: 100%;
+  width: 40%;
   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.error {
-  color: red;
-  display: none;
+.contentProd .content .produit .prod1 .boximg {
+  height: 70%;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.contentProd .content .produit .prod1 .boximg img {
+  height: 100%;
+  width: 100%;
+}
+.contentProd .content .produit .prod1 .nomPrix p {
+  height: 100%;
+  width: 100%;
+}
+.contentProd .content .produit .jaimePanier {
+  margin-left: 3rem;
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.contentProd .content .produit .jaimePanier .jaime button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3c8fd8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+.contentProd .content .produit .jaimePanier .ajout button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #47da9f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 /* aside */
@@ -193,6 +217,51 @@ aside {
   width: 10vw;
   height: 100%;
   background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+aside .exit {
+  height: 80px;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .contact {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .contact .nouscontactez {
+  font-size: larger;
+  background-color: #71a79c;
+}
+aside .contact .boxenvloppe {
+  width: 80px;
+  height: 50px;
+}
+aside .contact .boxenvloppe img {
+  width: 100%;
+  height: 100%;
+}
+
+/* bandeau */
+section > .bandeau {
+  height: 20%;
+  background-color: gold;
+}
+
+.bandeau {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow-x: scroll;
+  width: 100%;
 }
 
 footer {
@@ -207,4 +276,4 @@ footer {
     flex-direction: column;
     overflow: scroll;
   }
-}/*# sourceMappingURL=inscription.css.map */
+}/*# sourceMappingURL=prod1.css.map */

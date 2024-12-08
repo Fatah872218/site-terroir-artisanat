@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>produit1</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="prod1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-langues">
+        <div class="logo-box">
+          <ul>
+            <li><img src="../asset/logoterart1.png" alt="le logo" /></li>
+            <li><img src="../asset/logoterart2.png" alt="le logo vert" /></li>
+          </ul>
+        </div>
+        <div class="langues">
+          <ul>
+            <li>Fancais</li>
+            <li>Anglais</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compte-navbar">
+        <div class="compte-slogan">
+          <div class="compte">
+            <label for="Mon compte"> Mon compte</label>
+            <select name="Mon compte" id="Moncompte" required>
+              <option value="connexion">Connexion</option>
+              <option value="Inscription">Inscription</option>
+            </select>
+            <img src="../asset/logocompte.png" alt="logo-compte" />
+          </div>
+          <div class="slogan">
+            Consommez nos produits locaux et participez à la préservation de
+            notre patrimoine
+          </div>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#ProduitsDuTerroir"> Produits du Terroir</a></li>
+            <li><a href="#ArtisanatLocale"> Artisanat Locale</a></li>
+            <li><a href="#Nos producteurs"> Nos producteurs</a></li>
+            <li><a href="#NosArtisans"> Nos Artisants</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mon-panier">
+        <p>Mon panier</p>
+        <img src="../asset/chariot.png" alt="chariot" />
+        <fieldset>
+          <label for="produits">Produits</label>
+          <input
+            type="number"
+            id="produits"
+            name="produits"
+            placeholder="0"
+            aria-label="produits"
+            required
+            min="0"
+          />
+        </fieldset>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <section class="contact">
+          <div class="nouscontactez">Nous contactez</div>
+          <hr />
+          <div class="boxenvloppe">
+            <img src="../asset/enveloppe.png" alt="enveloppe" />
+          </div>
+          <hr />
+          <div class="Tel">
+            <a href="tel:+33563625924">Tel 05.63.62.59.24</a>
+            <hr />
+          </div>
+          <div class="adresse">
+            <a
+              href="https://www.google.com/maps/place/Afec+Pau/@43.2998448,-0.3700697,16&z=16&pitch=45&rotation=90"
+              target="_blank"
+              >Adresse: <br />
+              Terroir artisanat <br />
+              11 Rue Nogué, <br />
+              64000 Pau</a
+            >
+          </div>
+          <div class="maps">
+            <a
+              href="https://www.google.com/maps/place/Afec+Pau/@43.2998448,-0.3700697,16&z=16&pitch=45&rotation=90"
+              target="_blank"
+              ><img src="../asset/map.png" alt="carte mapsS"
+            /></a>
+          </div>
+        </section>
+        <div class="exit">
+          <a href="PageAccueil.html"> Exit</a>
+          <div class="boxExit">
+            <img
+              src="../asset/Exit.png"
+              alt="fleche pour le  retour a la page d Accueil"
+            />
+          </div>
+        </div>
+      </aside>
+      <section class="contentProd">
+        <div class="bandeau">
+          <div class="bandeauTerroir">
+            <div class="boxTerroir">
+              <img
+                src="../asset/bandeauterroir.jpg"
+                alt="des images de nos produits du terroir"
+              />
+            </div>
+            <button onclick="toggleMenu()">Produits du terroir</button>
+          </div>
+          <div class="bandeauArtisanat">
+            <div class="boxArtisanat">
+              <img
+                src="../asset/bandeauartisanat.png"
+                alt="des images de nos produits artisanaux"
+              />
+            </div>
+            <button onclick="toggleMenu()">Produits artisanauxs</button>
+          </div>
+        </div>
+        <div class="content">
+          <p>Pâté au piment d'Espelette</p>
+          <div class="produit">
+            <article class="description">
+              <h4>Description de produit:</h4>
+              <hr />
+              <p>
+                _ Notre délicieux pâté au piment d'Espelette <br />
+                Ici une touche de Pays Basque avec du piment d'Espelette pour
+                <br />
+                accompagner un pâté pur porc origine France au goût franc.
+                <br />
+                A déguster frais, avec du pain de campagne <br />
+                à l'apéritif ou au moment du repas. <br />
+                Terrine de 180g.
+              </p>
+            </article>
+
+            <div class="prod1">
+              <div class="boximg">
+                <img
+                  src="../asset/patepesp.png"
+                  alt="paté au piment d'espelette"
+                />
+              </div>
+              <div class="nomPrix">
+                <p>Paté au piment d'espelette</p>
+                <p>Prix: 5.80 euros</p>
+              </div>
+            </div>
+            <article class="jaimePanier">
+              <div class="jaime">
+                <button id="likeButton">J'aime</button>
+
+                <!-- Compteur -->
+                <div class="compteur">
+                  <p>Nombre de "J'aime" : <span id="likeCount">0</span></p>
+                </div>
+              </div>
+              <div class="ajout">
+                <div class="quantite-container">
+                  <button id="moinsButton">-</button>
+                  <span id="quantite">1</span>
+                  <button id="plusButton">+</button>
+                </div>
+
+                <!-- Bouton Ajouter au panier -->
+                <button id="ajouterPanierButton">Ajouter au panier</button>
+
+                <!-- Affichage du nombre de produits dans le panier -->
+                <div class="compteur">
+                  <p>
+                    Produits dans le panier : <span id="produitsCount">0</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Mentions legales</footer>
+  </body>
+</html>
