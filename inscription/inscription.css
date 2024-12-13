@@ -1,4 +1,8 @@
 /* header */
+body {
+  height: 200vh;
+}
+
 header {
   height: 160px;
   display: flex;
@@ -65,14 +69,21 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: spx;
 }
 
-.compte > #Moncompte {
-  margin: 20px 0 0 10px;
-  border: 0;
-  width: 90px;
-  height: 35px;
+.btn {
+  padding: 10px 10px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #537655;
 }
 
 .compte > img {
@@ -126,7 +137,7 @@ header {
 /* main */
 main {
   background-color: darkmagenta;
-  height: 80vh;
+  height: 150vh;
   display: flex;
   flex-direction: row;
 }
@@ -140,7 +151,7 @@ section {
 }
 
 section > .bandeau {
-  height: 20%;
+  height: 10%;
   background-color: gold;
 }
 
@@ -148,10 +159,14 @@ section > .bandeau {
 section > .content > form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 20rem;
   padding: 2px;
 }
 section > .content > form #inscription {
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  font-style: normal;
   display: flex;
   justify-content: center;
 }
@@ -207,4 +222,4 @@ footer {
     flex-direction: column;
     overflow: scroll;
   }
-}/*# sourceMappingURL=inscription.css.map */
+} /*# sourceMappingURL=inscription.css.map */

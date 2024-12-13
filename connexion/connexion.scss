@@ -60,14 +60,22 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: spx;
 }
-
-.compte > #Moncompte {
-  margin: 20px 0 0 10px;
-  border: 0;
-  width: 90px;
-  height: 35px;
+.btnCompte {
+  background-color: #71a79c;
+}
+.btn {
+  padding: 10px 10px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #537655;
 }
 .compte > img {
   margin: 10px 0 0 20px;

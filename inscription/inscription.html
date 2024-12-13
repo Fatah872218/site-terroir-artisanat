@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="inscription.css" />
+    <script src="inscription.js" defer></script>
     <title>inscription</title>
   </head>
   <body>
@@ -27,10 +28,10 @@
         <div class="compte-slogan">
           <div class="compte">
             <label for="Mon compte"> Mon compte</label>
-            <select name="Mon compte" id="Moncompte" required>
-              <option value="connexion">Connexion</option>
-              <option value="Inscription">Inscription</option>
-            </select>
+            <div class="btnCompte">
+              <button class="btn" id="connexion">Connexion</button>
+              <button class="btn" id="inscription">Inscription</button>
+            </div>
             <img src="../asset/logocompte.png" alt="logo-compte" />
           </div>
           <div class="slogan">
@@ -73,7 +74,7 @@
         <div class="bandeau"></div>
         <div class="content">
           <form action="/submit" method="post">
-            <h2 id="inscription">Inscription</h2>
+            <h2 id="">Inscription</h2>
             <label for="name"> Nom :</label>
             <input
               type="text"
@@ -136,7 +137,7 @@
               required
             />
 
-            <button type="submit">s'inscrire</button>
+            <button id="btnSubmit" type="submit">s'inscrire</button>
 
             <button type="reset">réinitialiser</button>
           </form>
