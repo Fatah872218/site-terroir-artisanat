@@ -20,45 +20,58 @@ ButtonInscrire.addEventListener("click", () => {
     document.querySelector("#confirm-password").value
   );
   console.log(document.querySelector("#confirm-password").value);
+
+  //Mot de passe: AZerty.1234
+
+  // recuperation et affiche des donnes sur la page web:
+  const div1 = document
+    .querySelector("section")
+    .appendChild(document.createElement("objet"));
+  const titre2 = document.createElement("h3");
+  div1.appendChild(titre2);
+  titre2.textContent = "Donnees stockées dans le local storage:";
+  console.log(titre2);
+  //-----------------
+  const nom = document.createElement("p");
+  div1.appendChild(nom);
+  nom.textContent = "Nom:";
+  console.log(nom);
+  nom.value = localStorage.getItem("Nom");
+  nom.append(nom.value);
+
+  console.log(nom.value);
+
+  //---------------
+  const prenom = document.createElement("p");
+  prenom.textContent = "Prenom:";
+  console.log(prenom);
+  div1.appendChild(prenom);
+  prenom.value = localStorage.getItem("Prénom");
+  prenom.append(prenom.value);
+  console.log(prenom.value);
+  //----------------
+  const email = document.createElement("p");
+  email.textContent = "Email:";
+  console.log(email);
+  div1.appendChild(email);
+  email.value = localStorage.getItem("Email");
+  email.append(email.value);
+  console.log(email.value);
+  //------------------------
+  const motDePass = document.createElement("p");
+  motDePass.textContent = "Mot de Passe:";
+  console.log(motDePass);
+  motDePass.value = localStorage.getItem("Mot de passe");
+  console.log(motDePass.value);
+});
+//----------------------------------------------------------------------
+//effacer les donner de locale storage:
+const btnReinitialiser = document.getElementById("btnReinitialiser");
+btnReinitialiser.addEventListener("click", () => {
+  localStorage.clear();
 });
 
-//Mot de passe: AZerty.1234
-
-// recuperation et affiche des donnes sur la page web:
-
-const titre2 = document.createElement("h3");
-titre2.textContent = "Donnees stockées dans le local storage:";
-console.log(titre2);
-//-----------------
-const nom = document
-  .querySelector("section")
-  .appendChild(document.createElement("p"));
-nom.textContent = "Nom:";
-console.log(nom);
-nom.value = localStorage.getItem("Nom");
-console.log(nom.value);
-
-//---------------
-const prenom = document.createElement("p");
-prenom.textContent = "Prenom:";
-console.log(prenom);
-prenom.value = localStorage.getItem("Prénom");
-console.log(prenom.value);
-//----------------
-const email = document.createElement("p");
-email.textContent = "Email:";
-console.log(email);
-email.value = localStorage.getItem("Email");
-console.log(email.value);
-//------------------------
-const motDePass = document.createElement("p");
-motDePass.textContent = "Mot de Passe:";
-console.log(motDePass);
-motDePass.value = localStorage.getItem("Mot de passe");
-console.log(motDePass.value);
-
-//----------------------------------------------------------------------
-
+//-------------------------------------------------------------------------
 // une autre methode ( a suivre):
 /* let arryData = [];
 const Form = document.querySelector("form");
