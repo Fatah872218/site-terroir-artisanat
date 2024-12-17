@@ -68,13 +68,70 @@
     </header>
     <main>
       <aside>
-        <a href="PageAccueil.html">Retour à la page d'accueil</a>
+        <section class="contact">
+          <div class="nouscontactez">Nous contactez</div>
+          <hr />
+          <div class="boxenvloppe">
+            <img src="../asset/enveloppe.png" alt="enveloppe" />
+          </div>
+          <hr />
+          <div class="Tel">
+            <a href="tel:+33563625924">Tel 05.63.62.59.24</a>
+            <hr />
+          </div>
+          <div class="adresse">
+            <a
+              href="https://www.google.com/maps/place/Afec+Pau/@43.2998448,-0.3700697,16&z=16&pitch=45&rotation=90"
+              target="_blank"
+              >Adresse: <br />
+              Terroir artisanat <br />
+              11 Rue Nogué, <br />
+              64000 Pau</a
+            >
+          </div>
+          <div class="maps">
+            <a
+              href="https://www.google.com/maps/place/Afec+Pau/@43.2998448,-0.3700697,16&z=16&pitch=45&rotation=90"
+              target="_blank"
+              ><img src="../asset/map.png" alt="carte mapsS"
+            /></a>
+          </div>
+        </section>
+        <div class="exit">
+          <a href="PageAccueil.html"> Exit</a>
+          <div class="boxExit">
+            <img
+              src="../asset/Exit.png"
+              alt="fleche pour le  retour a la page d Accueil"
+            />
+          </div>
+        </div>
       </aside>
       <section>
-        <div class="bandeau"></div>
+        <div class="bandeau">
+          <div class="bandeauTerroir">
+            <div class="boxTerroir">
+              <img
+                src="../asset/bandeauterroir.jpg"
+                alt="des images de nos produits du terroir"
+              />
+            </div>
+            <button onclick="toggleMenu()">Produits du terroir</button>
+          </div>
+          <div class="bandeauArtisanat">
+            <div class="boxArtisanat">
+              <img
+                src="../asset/bandeauartisanat.png"
+                alt="des images de nos produits artisanaux"
+              />
+            </div>
+            <button onclick="toggleMenu()">Produits artisanauxs</button>
+          </div>
+        </div>
+
         <div class="content">
           <form action="/submit" method="post">
-            <h2 id="">Inscription</h2>
+            <p id="inscription">Inscription</p>
             <label for="name"> Nom :</label>
             <input
               type="text"

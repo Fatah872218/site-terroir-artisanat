@@ -1,7 +1,8 @@
 /* header */
 
 body {
-  height: 200%;
+  height: 200vh;
+  background-color: #71a79c;
 }
 header {
   height: 160px;
@@ -17,7 +18,7 @@ header {
 .logo-box {
   height: 80%;
   overflow-y: scroll;
-  background-color: blueviolet;
+  background-color: #71a79c;
 }
 .logo-box > ul {
   list-style-type: none;
@@ -39,7 +40,7 @@ header {
   list-style-type: none;
   margin-top: 2px;
   width: 100%;
-  background-color: rgb(72, 172, 172);
+  background-color: #71a79c;
 }
 .compte-navbar {
   flex: 1;
@@ -69,10 +70,10 @@ header {
 .btn {
   padding: 10px 10px;
   font-size: 1.2em;
-  background-color: #4caf50;
+  background-color: #7b8b7b;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border: ridge;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -106,7 +107,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 10vw;
-  background-color: rgb(120, 150, 221);
+  background-color: #71a79c;
 }
 .mon-panier > fieldset {
   border: 0;
@@ -128,34 +129,47 @@ header {
 
 /* main */
 main {
-  background-color: darkmagenta;
+  background-color: #71a79c;
   height: 80vh;
   display: flex;
   flex-direction: row;
 }
 section {
-  background-color: blanchedalmond;
+  background-color: #71a79c;
   width: 90vw;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 section > .bandeau {
   height: 20%;
-  background-color: gold;
+  background-color: #71a79c;
+}
+.bandeau {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  width: 100%;
+}
+section > .content {
+  background-color: #e1ddda;
 }
 
 /* formulaire d'inscription */
 
 section > .content > form {
+  border-style: solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 5rem;
   margin-left: 20rem;
   padding: 2px;
   #inscription {
     font-family: "Times New Roman", Times, serif;
-    font-size: larger;
+    font-size: xx-large;
     font-style: normal;
     display: flex;
     justify-content: center;
@@ -163,7 +177,7 @@ section > .content > form {
 }
 
 label {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   display: block;
   margin: 10px 0 5px;
 }
@@ -191,16 +205,48 @@ button:hover {
 }
 
 /* aside */
-
 aside {
   width: 10vw;
   height: 100%;
-  background-color: chartreuse;
+  background-color: #71a79c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .exit {
+    height: 80px;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact {
+    background-color: #71a79c;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .nouscontactez {
+      font-size: larger;
+      background-color: #71a79c;
+    }
+    .boxenvloppe {
+      width: 80px;
+      height: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 footer {
   height: 50px;
-  background-color: cornflowerblue;
+  background-color: #71a79c;
 }
 /* media queries */
 @media screen and (max-width: 600px) {

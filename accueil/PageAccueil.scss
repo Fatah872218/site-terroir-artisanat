@@ -1,3 +1,8 @@
+body {
+  height: 200vh;
+  background-color: #71a79c;
+}
+
 /* header */
 header {
   height: 160px;
@@ -8,12 +13,12 @@ header {
 .logo-langues {
   height: 100%;
   width: 10vw;
-  background-color: blue;
+  background-color: #71a79c;
 }
 .logo-box {
   height: 80%;
   overflow-y: scroll;
-  background-color: blueviolet;
+  background-color: #71a79c;
 }
 .logo-box > ul {
   list-style-type: none;
@@ -38,13 +43,16 @@ header {
   background-color: rgb(72, 172, 172);
 }
 .compte-navbar {
-  flex: 1;
-  flex-direction: column;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: auto;
 }
 
 .compte-slogan {
+  font-size: 25px;
+  word-spacing: 3px;
+  font-variant: small-caps;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -54,28 +62,28 @@ header {
 .compte {
   display: flex;
   margin: 20px 0 0 2px;
-  flex-basis: 350px;
+  flex-basis: 450px;
 }
 .btnCompte {
+  display: flex;
+  flex-direction: column-reverse;
   background-color: #71a79c;
   .btn {
-    padding: 10px 10px;
-    font-size: 1.2em;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 4px 4px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #8bbcb1ef;
+    color: rgb(55, 56, 54);
+    border: ridge;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
   }
   .btn:hover {
     background-color: #537655;
   }
 }
 .compte > label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .compte > img {
@@ -88,6 +96,9 @@ header {
 }
 
 /* nav */
+.navbar {
+  font-size: 20px;
+}
 .navbar > ul {
   display: flex;
   flex-direction: row;
@@ -127,13 +138,15 @@ header {
 
 /* main */
 main {
-  background-color: darkmagenta;
+  background-color: #71a79c;
   height: 80vh;
   display: flex;
   flex-direction: row;
 }
+
 section {
-  background-color: blanchedalmond;
+  background-color: #71a79c;
+  width: 90vw;
   width: 90vw;
   height: 100%;
   display: flex;
@@ -144,11 +157,11 @@ section > .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: darkgreen;
+  background-color: #e1ddda;
   height: 80%;
 }
 section > .content > .prodFavICad {
-  background-color: aliceblue;
+  background-color: #e1ddda;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -163,9 +176,12 @@ section > .content > .prodFavICad > .prod1 > img,
 
 /* aside */
 aside {
+  border-width: 4px;
+  border-bottom: 0px;
+  border-style: ridge;
   width: 10vw;
   height: 100%;
-  background-color: chartreuse;
+  background-color: #71a79c;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -204,19 +220,69 @@ aside {
 
 section > .bandeau {
   height: 20%;
-  background-color: gold;
+  background-color: #71a79c;
 }
 .bandeau {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  overflow-x: scroll;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.bandeauTerroir {
+  position: relative;
+  display: inline;
+  height: 100%;
+}
+#ProdTerroir {
+  position: absolute;
+  bottom: 30%;
+  left: 10%; /* Positionné à 10% du côté gauche de l'image */
+
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: beige;
+
+  border-radius: 25px;
+  cursor: pointer;
+}
+#ProdTerroir:hover {
+  background-color: #71a79c;
+}
+
+.bandeauArtisanat {
+  position: relative;
+  display: inline;
+  height: 100%;
+}
+#ProdArtisanat {
+  position: absolute;
+  bottom: 30%;
+  left: 10%; /* Positionné à 10% du côté gauche de l'image */
+
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: beige;
+
+  border-radius: 25px;
+  cursor: pointer;
+}
+#ProdArtisanat:hover {
+  background-color: #71a79c;
 }
 
 footer {
+  border-width: 4px;
+  border-style: ridge;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 50px;
-  background-color: cornflowerblue;
+  background-color: #71a79c;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-style: italic;
 }
 /* media queries */
 @media screen and (max-width: 600px) {
@@ -226,3 +292,8 @@ footer {
     overflow: scroll;
   }
 }
+//--------------------------
+@media screen and (max-width: 600px) {
+}
+
+//----------------------------------------
