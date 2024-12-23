@@ -1,4 +1,4 @@
-//recuperation des donnees utilisateu
+//recuperation des donnees utilisateur
 
 const inscriptionForm = document.getElementById("inscription");
 const ButtonInscrire = document.getElementById("btnSubmit");

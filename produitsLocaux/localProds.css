@@ -10,16 +10,19 @@ header {
   justify-content: space-between;
   background-color: #71a79c;
 }
+
 .logo-langues {
   height: 100%;
   width: 10vw;
   background-color: #71a79c;
 }
+
 .logo-box {
   height: 80%;
   overflow-y: scroll;
   background-color: #71a79c;
 }
+
 .logo-box > ul {
   list-style-type: none;
 }
@@ -42,6 +45,7 @@ header {
   width: 100%;
   background-color: rgb(72, 172, 172);
 }
+
 .compte-navbar {
   display: flex;
   flex-direction: column;
@@ -64,28 +68,25 @@ header {
   margin: 20px 0 0 2px;
   flex-basis: 450px;
 }
+
 .btnCompte {
   display: flex;
   flex-direction: column-reverse;
   background-color: #71a79c;
-  .btn {
-    padding: 4px 4px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #8bbcb1ef;
-    color: rgb(55, 56, 54);
-    border: ridge;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-  }
-  .btn:hover {
-    background-color: #537655;
-  }
 }
-.compte > label {
-  margin-top: 20px;
-  width: 200px;
+.btnCompte .btn {
+  padding: 4px 4px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(139, 188, 177, 0.937254902);
+  color: rgb(55, 56, 54);
+  border: ridge;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.btnCompte .btn:hover {
+  background-color: #537655;
 }
 
 .compte > img {
@@ -99,22 +100,20 @@ header {
 
 /* nav */
 .navbar {
-  font-weight: bolder;
   font-size: 20px;
-  font-style: normal;
 }
+
 .navbar > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .navbar > ul > li {
-  font-size: 25px;
   list-style-type: none;
 }
 
 /* mon-panier */
-
 .mon-panier {
   display: flex;
   flex-direction: column;
@@ -123,6 +122,7 @@ header {
   width: 10vw;
   background-color: rgb(120, 150, 221);
 }
+
 .mon-panier > fieldset {
   border: 0;
   padding: 2px;
@@ -149,9 +149,9 @@ main {
   flex-direction: row;
 }
 
-main > section {
+section {
   background-color: #71a79c;
-
+  width: 90vw;
   width: 90vw;
   height: 100%;
   display: flex;
@@ -165,6 +165,7 @@ section > .content {
   background-color: #e1ddda;
   height: 80%;
 }
+
 section > .content > .prodFavICad {
   background-color: #e1ddda;
   display: flex;
@@ -172,6 +173,7 @@ section > .content > .prodFavICad {
   justify-content: space-around;
   height: 90%;
 }
+
 section > .content > .prodFavICad > .prod1 > img,
 .prod2 > img,
 .prod3 > img {
@@ -190,77 +192,74 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .exit {
-    height: 80px;
-    width: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .contact {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    .nouscontactez {
-      font-size: larger;
-      background-color: #71a79c;
-    }
-    .boxenvloppe {
-      width: 80px;
-      height: 50px;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
+}
+aside .exit {
+  height: 80px;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .contact {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .contact .nouscontactez {
+  font-size: larger;
+  background-color: #71a79c;
+}
+aside .contact .boxenvloppe {
+  width: 80px;
+  height: 50px;
+}
+aside .contact .boxenvloppe img {
+  width: 100%;
+  height: 100%;
 }
 
 /* bandeau */
-
 section > .bandeau {
   height: 20%;
   background-color: #71a79c;
 }
+
 .bandeau {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
+
 .bandeauTerroir {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 1;
+  display: inline;
   height: 100%;
 }
+
 #ProdTerroir {
   position: absolute;
   bottom: 30%;
   left: 10%; /* Positionné à 10% du côté gauche de l'image */
-
   padding: 10px 20px;
   font-size: 16px;
   background-color: beige;
-
   border-radius: 25px;
   cursor: pointer;
 }
+
 #ProdTerroir:hover {
   background-color: #71a79c;
 }
 
 .bandeauArtisanat {
   position: relative;
-  display: flex;
-  flex-direction: row;
-
+  display: inline;
   height: 100%;
 }
 
@@ -268,22 +267,15 @@ section > .bandeau {
   position: absolute;
   bottom: 30%;
   left: 10%; /* Positionné à 10% du côté gauche de l'image */
-
   padding: 10px 20px;
   font-size: 16px;
   background-color: beige;
-
   border-radius: 25px;
   cursor: pointer;
 }
+
 #ProdArtisanat:hover {
   background-color: #71a79c;
-}
-
-#boxArtisanat,
-#boxTerroir {
-  width: 100%;
-  height: 100%;
 }
 
 footer {
@@ -299,6 +291,7 @@ footer {
   font-size: 25px;
   font-style: italic;
 }
+
 /* media queries */
 @media screen and (max-width: 600px) {
   section > .content > .prodFavICad {
@@ -307,18 +300,34 @@ footer {
     overflow: scroll;
   }
 }
-//--------------------------
-/* @media screen and (max-width: 600px) {
-  body {
-    display: none;
-  }
-} */
-
-//----------------------------------------
 @media screen and (max-width: 600px) {
-  section > .content > .prodFavICad {
-    display: flex;
+  /* Logo et langues */
+  .logo-langues {
     flex-direction: column;
-    overflow: scroll;
+    text-align: center;
+  }
+  .logo-box ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .logo-box ul li {
+    margin-right: 10px;
+  }
+  .langues ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .langues ul li {
+    margin-left: 10px;
+    cursor: pointer;
   }
 }
+@media screen and (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+} /*# sourceMappingURL=PageAccueil.css.map */
